@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/title_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="textCapWords"
+            />
+
+        <EditText
+            android:id="@+id/message_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:inputType="textCapWords"
+            />
+
+        <CheckBox
+            android:id="@+id/onlyTitle_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Only Send Title"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/email_activity"
+            style="@style/ButtonStyle"
+            android:text="Send Email" />
+
+
+        <Button
+            android:id="@+id/launch_activity"
+            style="@style/ButtonStyle"
+            android:text="Launch Activity" />
+
+
+        <Button
+            android:id="@+id/camera_activity"
+            style="@style/ButtonStyle"
+            android:text="Launch Camera" />
+
+    </LinearLayout>
+</ScrollView>
